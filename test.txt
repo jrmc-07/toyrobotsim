@@ -1,0 +1,82 @@
+TC1
+
+MOVE
+REPORT
+
+---------------------
+
+TC2
+
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+REPORT
+
+---------------------
+
+TC 3
+
+PLACE 0,0,NORTH
+LEFT
+MOVE
+MOVE
+MOVE
+RIGHT
+MOVE
+REPORT
+
+---------------------
+
+TC 4
+
+PLACE 0,0,NORTH
+MOVE            -- 0,1,N
+RIGHT           -- 0,1,E
+MOVE            -- 1,1,E
+LEFT            -- 1,1,N
+MOVE            -- 1,2,N
+RIGHT           -- 1,2,E
+MOVE            -- 2,2,E
+LEFT            -- 2,2,N
+MOVE            -- 2,3,N
+RIGHT           -- 2,3,E
+MOVE            -- 3,3,E
+LEFT            -- 3,3,N
+MOVE            -- 3,4,N
+RIGHT           -- 3,4,E
+MOVE            -- 4,4,E
+REPORT          -- 4,4,E
+
+---------------------
+
+TC 5
+
+PLACE 0,0,SOUTH
+MOVE            -- 0,0,S
+RIGHT           -- 0,0,W
+MOVE            -- 0,0,W
+RIGHT           -- 0,0,N
+MOVE            -- 0,1,N
+LEFT            -- 0,1,W
+MOVE            -- 0,1,W
+RIGHT           -- 0,1,N
+MOVE            -- 0,2,N
+MOVE            -- 0,3,N
+MOVE            -- 0,4,N
+MOVE            -- 0,4,N
+RIGHT           -- 0,4,E
+MOVE            -- 1,4,E
+MOVE            -- 2,4,E
+MOVE            -- 3,4,E
+MOVE            -- 4,4,E
+MOVE            -- 4,4,E
+LEFT            -- 4,4,N
+MOVE            -- 4,4,N
+REPORT          -- 4,4,N
+
+---------------------
+
+TC 6
+
+PLACE 5,5,NORTH -- Invalid coordinates. 0 <= x <= 4, 0 <= y <= 4
